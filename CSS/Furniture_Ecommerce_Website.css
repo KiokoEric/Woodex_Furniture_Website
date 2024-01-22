@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:wght@400;700&family=Mr+De+Haviland&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+    width: 0.7rem;
+}
+html::-webkit-scrollbar-track {
+    background-color: var(--White);
+}
+html::-webkit-scrollbar-thumb {
+    background-color: var(--Tan-crayola);
+}
+:root {
+    --H1: 50px;
+    --H2: 35px;
+    --H3: 22px;
+    --H4: ;
+    --Paragraph: 19px;
+    --Red-orange-color-wheel: hsl(17, 96%, 48%);
+    --Middle-blue-green: hsl(167, 45%, 72%);
+    --Smokey-black: hsl(0, 0%, 7%);
+    --Spanish-gray: hsl(0, 0%, 60%);
+    --Granite-gray: hsl(0, 0%, 40%);
+    --Tan-crayola: hsl(27, 46%, 58%);
+    --Light-gray: hsl(0, 0%, 80%);
+    --Black_10: hsla(0, 0%, 0%, 0.1);
+    --Black_25: hsla(0, 0%, 0%, 0.25);
+    --Black_50: hsla(0, 0%, 0%, 0.4);
+    --Black_70: hsla(0, 0%, 0%, 0.7);
+    --Cultured: hsl(220, 16%, 96%);
+    --Manatee: hsl(218, 11%, 65%);
+    --Black: hsl(0, 0%, 0%);
+    --White: hsl(0, 0%, 100%);
+}
+p {
+    font-size: var(--Paragraph);
+}
+body {
+    font-family: 'Bona Nova', serif;
+}
+header {
+    background-color: white;
+    padding-top: 0.2rem;
+    padding-bottom: 0.5rem;
+    position:sticky;
+    top: 0rem;
+    z-index: 2;
+}
+header article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 1200px;
+}
+input[type="email"] {
+    color: var(--Granite-gray);
+    font-family: 'Bona Nova', serif;
+    font-size: var(--Paragraph);
+    padding: 1rem;
+}
+header input {
+    border: none;
+    border-bottom: 1px solid var(--Light-gray);
+    height: 45px;
+    padding-left: 1rem;
+    width: 240px;
+}
+input::placeholder {
+    color: var(--Granite-gray);
+    font-family: 'Bona Nova', serif;
+    font-size: var(--Paragraph);
+}
+input:focus {
+    outline: 0;
+}
+#Search {
+    color: var(--Granite-gray);
+    font-size: 20px;
+    position: relative;
+    left: -2.5rem;
+}
+header h1 {
+    font-size: var(--H1);
+}
+header section:last-child {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.2rem;
+}
+header section:last-child i {
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 2rem;
+}
+.Home {
+    margin: auto;
+    margin-bottom: 5rem;
+    width: 1200px;
+}
+.Home section {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.8rem;
+}
+.Home section:last-child {
+    margin-top: -2.8rem;
+}
+.Home img {
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Home img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+.Home section:first-child figcaption {
+    position: relative;
+    left: 1.5rem;
+    top: -23rem;
+}
+.Home section:last-child figcaption {
+    position: relative;
+    left: 2.5rem;
+    top: -12rem;
+}
+.Home h3 {
+    font-size: var(--H3);
+    margin-bottom: 0.5rem;
+}
+.Home p {
+    color: var(--Black);
+}
+.About {
+    margin: auto;
+    margin-bottom: 5rem;
+    width: 1200px;
+}
+.About h1 {
+    font-family: 'Mr De Haviland', cursive;
+    font-size: var(--H1);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.About p {
+    line-height: 1.8rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 750px;
+}
+.About img {
+    border-radius: 5px;
+    cursor: pointer;
+}
+.About img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s linear;
+}
+.About i {
+    color: var(--White);
+    cursor: pointer;
+    font-size: 60px;
+    position: relative;
+    top: -16.2rem;
+    left: 35rem;
+    z-index: 2;
+}
+.Products {
+    margin: auto;
+    margin-bottom: 4rem;
+    width: 1200px;
+}
+.Products h1 {
+    font-size: var(--H1);
+}
+.Products section:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+.Products section div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Products section:first-child p {
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+.Products section:first-child p:hover {
+    color: var(--Tan-crayola);
+}
+.Products section {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    margin-bottom: 4rem;
+}
+.Products img {
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Products img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+.Products figcaption {
+    margin-top: 1rem;
+    text-align: center;
+}
+.Products h3 {
+    margin-bottom: 0.5rem;
+}
+.Decoration {
+    margin-right: 1rem;
+    text-decoration: line-through;
+}
+.Blog {
+    margin: auto;
+    margin-bottom: 5rem;
+    width: 1200px;
+}
+.Blog h1 {
+    font-size: var(--H1);
+}
+.Blog h2 {
+    font-size: var(--H2);
+    margin-bottom: 1rem;
+}
+.Blog h3 {
+    cursor: pointer;
+    font-size: var(--H3);
+    margin-bottom: 0.5rem;
+}
+.Blog h3:hover {
+    color: var(--Tan-crayola);
+}
+.Blog section:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+.Blog section:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+.Blog img {
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    width: 390px;
+}
+.Blog figcaption {
+    width: 390px;
+}
+.Blog figcaption div {
+    display: flex;
+    flex-direction: row;
+}
+.Blog section:last-child {
+    background-color: var(--Cultured);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    padding: 0rem 4rem;
+}
+.Blog input {
+    border: none;
+    border-bottom: 1px solid var(--Light-gray);
+    height: 55px;
+    padding-bottom: 0.8rem;
+    width: 450px;
+}
+.Blog::placeholder {
+    color: var(--Granite-gray);
+    font-family: 'Bona Nova', serif;
+    font-size: var(--Paragraph);
+}
+#Arrow {
+    position: relative;
+    left: -2rem;
+}
+footer {
+    background-color: var(--Cultured);
+}
+footer article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 1200px;
+    padding: 4rem 0rem;
+}
+footer h2 {
+    font-size: var(--H2);
+    margin-bottom: 1rem;
+}
+footer figure {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+footer i {
+    margin-right: 1rem;
+}
+.Share {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+    width: 150px;
+}
+.Share i {
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 1rem;
+}
+.Share i:hover {
+    color: var(--Tan-crayola);
+}
+footer li {
+    cursor: pointer;
+    font-size: var(--Paragraph);
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+footer li:hover {
+    color: var(--Tan-crayola);
+}
+footer h3 {
+    font-size: var(--H3);
+    margin-bottom: 1.5rem;
+}
+footer input {
+    border: none;
+    border-bottom: 1px solid var(--Light-gray);
+    height: 45px;
+    padding-left: 1rem;
+    width: 260px;
+}
+footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+footer div p:hover {
+    color: var(--Tan-crayola);
+    cursor: pointer;
+}
